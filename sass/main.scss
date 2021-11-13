@@ -1,0 +1,19 @@
+@import "./utils/variables";
+
+@import "./base/global-style";
+
+@import "./layout/page-header";
+@import "./layout/social";
+@import "./layout/page-footer";
+@import "./layout/footer-send";
+@import "./layout/visually-hidden";
+
+@import "./components/container";
+@import "./components/hero-section";
+@import "./components/modalka";
+@import "./components/section";
+@import "./components/recomendation";
+@import "./components/command";
+@import "./components/comand-list";
+@import "./components/company";
+@import "./components/page-portfolio";
