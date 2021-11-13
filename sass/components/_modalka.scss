@@ -27,6 +27,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 2;
+  overflow-y: scroll;
 }
 .page-modalka.is-hidden .modalka-windows {
   transform: scale(0.9) translate(-50%, -50%);
