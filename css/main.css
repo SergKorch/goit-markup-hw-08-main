@@ -788,12 +788,19 @@ textarea:focus {
   color: var(--primary-text-color);
 }
 
-.section-recomendation {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-left: 0;
+@media screen and (min-width: 480px) {
+  .section-recomendation {
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-recomendation {
+    display: inline-flex;
+  }
 }
 
 .section-recomendation__item {
