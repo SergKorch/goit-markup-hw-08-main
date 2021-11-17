@@ -1,11 +1,16 @@
 .social {
   display: flex;
   padding-left: 0;
-  margin-left: 32px;
-  margin-right: 32px;
+  // margin-left: 32px;
+  // margin-right: 32px;
   padding-bottom: 24px;
   justify-content: space-between;
   align-items: center;
+  @media screen  and (max-width: 479px){ 
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .social__area {
   height: 44px;
