@@ -607,10 +607,6 @@ textarea:focus {
   line-height: 1.71;
 }
 
-.command {
-  background-color: var(--command-background);
-}
-
 .section-second {
   display: none;
 }
@@ -628,6 +624,7 @@ textarea:focus {
 @media screen and (min-width: 1200px) {
   .section-second {
     display: block;
+    padding-bottom: 94px;
   }
 }
 
@@ -644,8 +641,6 @@ textarea:focus {
 .section-second__img {
   margin-left: auto;
   margin-right: auto;
-  min-width: 320px;
-  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) {
@@ -668,7 +663,16 @@ textarea:focus {
 @media screen and (min-width: 768px) {
   .section-second__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-second__list {
+    width: 1170px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -688,10 +692,26 @@ textarea:focus {
 }
 
 .section-second__card {
+  max-width: 450px;
+  max-height: 622px;
   margin-bottom: 30px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-second__card {
+    width: 354px;
+    height: 536px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-second__card {
+    width: 270px;
+    height: 428px;
+  }
 }
 
 .section-second__text {
@@ -703,8 +723,6 @@ textarea:focus {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0px;
-  right: 0;
-  margin: 0;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
