@@ -10,6 +10,7 @@
   transition-duration: 250ms;
   transition-timing-function: var(--cibic-animation);
   z-index: 1;
+
 }
 .page-modalka.is-hidden {
   opacity: 0;
@@ -17,6 +18,8 @@
 }
 .modalka-windows {
   position: absolute;
+  margin-left: -23px;
+  margin-right: auto;
   left: 50%;
   top: 50%;
   transform: scale(0.9) translate(-50%, -50%);
@@ -26,13 +29,11 @@
     width: 528px;
     height: 581px;
   }
-
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 2;
- 
 }
 .page-modalka.is-hidden .modalka-windows {
   transform: scale(0.9) translate(-50%, -50%);

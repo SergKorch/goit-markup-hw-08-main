@@ -265,6 +265,8 @@ body {
 
 .modalka-windows {
   position: absolute;
+  margin-left: -23px;
+  margin-right: auto;
   left: 50%;
   top: 50%;
   transform: scale(0.9) translate(-50%, -50%);
