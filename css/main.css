@@ -158,7 +158,11 @@ body {
 }
 
 .section-hero__area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 480px;
+  min-width: 320px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -168,30 +172,50 @@ body {
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero__area {
+    background-image: url("../images/hero2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-hero__area {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
     max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero__area {
+    background-image: url("../images/hero-tablet2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-hero__area {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop.jpg");
     max-width: 1600px;
     height: 600px;
   }
 }
 
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero__area {
+    background-image: url("../images/hero-desktop2x.jpg");
+  }
+}
+
 .section-hero__text {
   color: var(--text-hero-footer);
-  padding-top: 200px;
   padding-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-hero__button {
