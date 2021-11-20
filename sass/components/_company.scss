@@ -1,5 +1,4 @@
 .section-company {
-  // @extend .container;
   @media screen and (max-width: 479px) {
     margin: 0;
   }
@@ -13,26 +12,26 @@
   padding-bottom: 30px;
   color: var(--primary-text-color);
   @media screen and (min-width: 1200px) {
-  font-size: 36px;
-  line-height: 1.16;
-  padding-bottom: 50px;
- }
+    font-size: 36px;
+    line-height: 1.16;
+    padding-bottom: 50px;
+  }
 }
 .section-company__list {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   @media screen and (min-width: 480px) {
     width: 450px;
     justify-content: space-around;
-   }
-   @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
     width: 738px;
-   }
-   @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     width: 1170px;
-    flex-wrap: nowrap; 
-   }
+    flex-wrap: nowrap;
+  }
 }
 .section-company__item {
   display: flex;
@@ -42,23 +41,21 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   justify-content: center;
-align-items: center;
+  align-items: center;
   @media screen and (min-width: 480px) {
     width: 226px;
-   }
-   @media screen and (min-width: 1200px) {   
+  }
+  @media screen and (min-width: 1200px) {
     width: 170px;
-height: 92px;
-
-   }
- 
+    height: 92px;
+  }
 }
 .section-company__icon {
   justify-content: center;
   align-items: center;
   width: 106px;
   height: 60px;
-  fill: #afb1b8;  
+  fill: #afb1b8;
   transition-property: border-color, fill;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cibic-animation);
