@@ -1,16 +1,37 @@
 .send {
-  padding-left: 93px;
+  display: block;
+  max-width: 450px;
+  height: 156px;
+  
+@media screen and (min-width: 480px) {
+  
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-left: 93px;
+    width: 570px;
+  height: 86px;
+    }
 }
 .send__title {
   @extend .social-text-footer;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+    }
+ 
 }
 .send__form {
-  display: inline-block;
-  margin-top: 20px;
+  display: block;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
 }
 .send__area {
   display: inline-flex;
-  padding-left: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  // padding-left: 16px;
+  // padding-right: 0;
+  // margin-right: 0;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -30,7 +51,7 @@
 }
 .send__icon {
   fill: var(--primary-background-color);
-  margin-left: 10px;
+  // margin-left: 10px;
   transition-property: fill;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cibic-animation);
@@ -42,7 +63,7 @@
   display: inline-flex;
   justify-content: center;
   align-content: center;
-  margin-left: 12px;
+  
   font-family: inherit;
   color: var(--text-hero-footer);
   background-color: var(--link);
