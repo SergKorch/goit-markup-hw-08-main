@@ -268,13 +268,20 @@ body {
   left: 50%;
   top: 50%;
   transform: scale(0.9) translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 2;
   overflow-y: scroll;
+}
+
+@media screen and (min-width: 1200px) {
+  .modalka-windows {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .page-modalka.is-hidden .modalka-windows {
@@ -412,7 +419,13 @@ body {
   top: 4.5px;
   width: 16px;
   height: 15px;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modalka-info__chek {
+    margin-top: 20px;
+  }
 }
 
 .modalka-info__conditions:checked + .modalka-info__chek {
@@ -427,10 +440,20 @@ body {
 .modalka-info__agreement {
   display: inline-block;
   padding-top: 20px;
-  font-size: 14px;
-  line-height: 1.71;
+  margin-left: 18px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   color: var(--section-comand-portfolio-navig-text);
+}
+
+@media screen and (min-width: 1200px) {
+  .modalka-info__agreement {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-left: 0px;
+  }
 }
 
 .modalka-info__download:hover {
