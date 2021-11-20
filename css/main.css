@@ -125,26 +125,30 @@ body {
   margin: -1px;
 }
 
-.container, .section-company {
-  margin-left: 15px;
-  margin-right: 15px;
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 320px;
 }
 
 @media screen and (min-width: 480px) {
-  .container, .section-company {
-    max-width: 480px;
+  .container {
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container, .section-company {
-    max-width: 768px;
+  .container {
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container, .section-company {
-    max-width: 1200px;
+  .container {
+    width: 1200px;
   }
 }
 
@@ -161,26 +165,35 @@ body {
 }
 
 .section-recomendation {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.section-recomendation__item {
-  max-width: 450px;
+@media screen and (min-width: 768px) {
+  .section-recomendation__item {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 354px;
+    justify-content: space-between;
+  }
+  .section-recomendation__item:nth-child(2n) {
+    margin-left: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-recomendation__item {
+    width: 270px;
+    padding: 0;
+    margin-left: 0;
+  }
+  .section-recomendation__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-recomendation__item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-recomendation__item {
-    margin: 15px;
-  }
 }
 
 .section-recomendation__list {
@@ -190,24 +203,6 @@ body {
   margin-bottom: 30px;
   border-radius: 4px;
   width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .section-recomendation__list {
-    max-width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section-recomendation__list {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-recomendation__list {
-    width: 270px;
-  }
 }
 
 .section-recomendation__icon {
@@ -244,23 +239,27 @@ body {
   line-height: 1.71;
 }
 
-@media screen and (min-width: 768px) {
-  .section-recomendation__text {
-    margin: 15px;
-  }
-}
-
 .command {
   background-color: var(--command-background);
+}
+
+.section-second {
+  display: none;
 }
 
 .section-second > .no-margin {
   padding-left: 0;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1200px) {
   .section-second {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-second {
+    display: block;
   }
 }
 
