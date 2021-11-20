@@ -218,27 +218,78 @@
             <h2 class="section-second__title">Чем мы занимаемся</h2>
             <ul class="section-second__list no-margin">
               <li class="section-second__item">
-                <img
-                  src="./images/box1.jpg"
-                  width="370"
-                  alt="чем мы занимаемся"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-1-desktop.jpg        1x,
+                      ./images/occupation/occ-1-desktop.jpg@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-1-desktop.jpg.webp    1x,
+                      ./images/occupation/occ-1-desktop.jpg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="#"
+                    alt="чем мы занимаемся"
+                    class="section-second__img1"
+                  />
+                </picture>
                 <p class="section-second__text">Десктопные приложения</p>
               </li>
               <li class="section-second__item">
-                <img
-                  src="./images/box2.jpg"
-                  width="370"
-                  alt="чем мы занимаемся"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-2-desktop.jpg        1x,
+                      ./images/occupation/occ-2-desktop.jpg@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-2-desktop.jpg.webp    1x,
+                      ./images/occupation/occ-2-desktop.jpg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="#"
+                    alt="чем мы занимаемся"
+                    class="section-second__img1"
+                  />
+                </picture>
                 <p class="section-second__text">Мобильные приложения</p>
               </li>
               <li class="section-second__item">
-                <img
-                  src="./images/box3.jpg"
-                  width="370"
-                  alt="чем мы занимаемся"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-3-desktop.jpg        1x,
+                      ./images/occupation/occ-3-desktop.jpg@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occupation/occ-3-desktop.jpg.webp    1x,
+                      ./images/occupation/occ-3-desktop.jpg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="#"
+                    alt="чем мы занимаемся"
+                    class="section-second__img1"
+                  />
+                </picture>
                 <p class="section-second__text">Дизайнерские решения</p>
               </li>
             </ul>
@@ -567,8 +618,8 @@
           </ul>
         </div>
       </section>
-      <!-- <section >
-        <div class="section-company">
+      <section >
+        <div class="section-company container">
           <h2 class="section-company__title">Постоянные клиенты</h2>
           <ul class="no-margin section-company__list">
             <li class="section-company__item">
@@ -609,7 +660,7 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section>  
     </main>
 
     <!-- <footer class="page-footer">

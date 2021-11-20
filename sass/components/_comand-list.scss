@@ -8,18 +8,26 @@
   }
   @media screen and (min-width: 1200px) {
     display: block;
-    padding-bottom: 94px;
   }
 }
 
 .section-second__title {
   font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  @media screen and (min-width: 1200px) {
   font-size: 36px;
   line-height: 1.16;
+  padding-top: 94px;
+  padding-bottom: 50px;
+ }
   text-align: center;
   padding-top: 60px;
   padding-bottom: 30px;
   color: var(--primary-text-color);
+}
+.section-second__img1 {
+ width: 370px;
 }
 .section-second__img {
   display: flex;
@@ -35,19 +43,20 @@
   }
 }
 .section-second__list {
-  display: block;
+ 
+  padding-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
+    padding-bottom: 30px;
+
   }
   @media screen and (min-width: 1200px) {
     width: 1170px;
     flex-wrap: nowrap;
+    padding-bottom: 94px;
   }
-
-  padding-bottom: 60px;
 }
 .section-second__item {
   position: relative;
@@ -64,13 +73,16 @@
 }
 
 .section-second__card {
+  &:not(:last-child)  {
+    margin-bottom: 30px;
+  }
   max-width: 450px;
   max-height: 622px;
-  margin-bottom: 30px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 536px;
@@ -83,6 +95,7 @@
 
 .section-second__text {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   position: absolute;

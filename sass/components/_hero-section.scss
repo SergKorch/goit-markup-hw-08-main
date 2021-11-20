@@ -54,7 +54,7 @@
 
 }
 .section-hero__text {
-
+  display: flex;
   color: var(--text-hero-footer);
   padding-bottom: 30px;
   font-weight: 900;
@@ -65,7 +65,13 @@
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    font-size: 44px;
+  line-height: 1.36;
+  max-width: 696px;
 
+   }
 }
 .section-hero__button {
   display: inline-block;
