@@ -3,14 +3,15 @@
   max-width: 450px;
   height: 156px;
   
-@media screen and (min-width: 480px) {
-  
-  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+   }
   @media screen and (min-width: 1200px) {
-    display: block;
-    padding-left: 93px;
-    width: 570px;
-  height: 86px;
+    margin-left: auto;
+margin-right: 0;
+width: 100%;
     }
 }
 .send__title {
@@ -23,15 +24,20 @@
 .send__form {
   display: block;
   padding-bottom: 60px;
-  background-color: var(--footer-background-color);
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    }
 }
 .send__area {
-  display: inline-flex;
+  display: flex;
+
   margin-top: 20px;
   margin-bottom: 20px;
-  // padding-left: 16px;
-  // padding-right: 0;
-  // margin-right: 0;
+  margin-right: auto;
+  margin-left: auto;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -60,10 +66,11 @@
   fill: var(--hero-hover);
 }
 .send__button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-content: center;
-  
+  margin-right: auto;
+  margin-left: auto;
   font-family: inherit;
   color: var(--text-hero-footer);
   background-color: var(--link);
