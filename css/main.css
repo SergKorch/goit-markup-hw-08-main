@@ -122,12 +122,7 @@ body {
 @media screen and (min-width: 768px) {
   .page-footer {
     height: 463px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-footer {
-    height: 252px;
+    background-color: var(--footer-background-color);
   }
 }
 
