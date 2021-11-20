@@ -19,11 +19,12 @@
 .modalka-windows {
   position: absolute;
   margin-left: -23px;
-  margin-right: auto;
+
   left: 50%;
   top: 50%;
   transform: scale(0.9) translate(-50%, -50%);
-  width: 450px;
+  min-width: 320px;
+ max-width: 450px;
   height: 609px;
   @media screen and (min-width: 1200px) {
     width: 528px;
