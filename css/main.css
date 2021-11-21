@@ -314,7 +314,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: violet;
+    background-color: var(--primary-background-color);
     padding: 48px 40px 48px 40px;
     opacity: 0;
     visibility: hidden;
@@ -323,6 +323,12 @@ body {
     transition-duration: var(--time-animation);
     transition-timing-function: var(--cibic-animation);
   }
+}
+
+.header-modalka__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-modalka.is-open {
@@ -363,6 +369,88 @@ body {
   .header-modalka__icon {
     display: none;
   }
+}
+
+.navigation-modalka__link {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.navigation-modalka__link:hover, .navigation-modalka__link:focus {
+  color: var(--link);
+}
+
+.navigation-modalka__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contacts-box {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.modalka-contacts {
+  display: block;
+}
+
+.modalka-contacts__mail {
+  display: block;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--section-comand-portfolio-navig-text);
+}
+
+.modalka-contacts__mail:hover, .modalka-contacts__mail:focus {
+  color: var(--link);
+}
+
+.modalka-contacts__tel {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--link);
+  margin-bottom: 32px;
+}
+
+.header-social {
+  display: flex;
+}
+
+.header-social__link {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--link);
+  letter-spacing: 0.02em;
+}
+
+.header-social__list {
+  display: inline-block;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.header-social__list:first-child {
+  padding-left: 0;
+}
+
+.header-social__list:last-child {
+  border-right: none;
 }
 
 .social {
