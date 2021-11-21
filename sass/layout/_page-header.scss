@@ -169,7 +169,9 @@
 .page-header__icon {
   width: 40px;
   height: 40px;
-
+  transition-property: fill;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
   &:hover,
   &:focus {
     fill: var(--link);
@@ -243,6 +245,9 @@
 .header-modalka__icon {
   width: 40px;
   height: 40px;
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
   &:hover,
   &:focus {
     fill: var(--link);
@@ -265,6 +270,9 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
   &:hover,
   &:focus {
     color: var(--link);
@@ -292,6 +300,9 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--section-comand-portfolio-navig-text);
+  transition-property: color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
   &:hover,
   &:focus {
     color: var(--link);
