@@ -1278,14 +1278,15 @@ textarea:focus {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 768px) {
   .section {
-    padding: 30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1633,7 +1634,13 @@ textarea:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-button {
+    padding-bottom: 50px;
+  }
 }
 
 .portfolio-button__style {
@@ -1713,9 +1720,15 @@ textarea:focus {
 .portfolio-list__card {
   display: block;
   position: relative;
-  width: 370px;
+  width: 100%;
   height: 294px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list__card {
+    width: 370px;
+  }
 }
 
 .portfolio-list__text {
@@ -1728,7 +1741,7 @@ textarea:focus {
   top: 0;
   left: 0;
   right: 0;
-  width: 370px;
+  width: 100%;
   height: 294px;
   padding: 63px 24px 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
@@ -1736,6 +1749,12 @@ textarea:focus {
   transition-property: transform;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cibic-animation);
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list__text {
+    width: 370px;
+  }
 }
 
 .portfolio-list .portfolio-list__item {
@@ -1748,13 +1767,23 @@ textarea:focus {
   transition-timing-function: var(--cibic-animation);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio-list .portfolio-list__item {
     position: relative;
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-list__item {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .portfolio-list .portfolio-list__item:hover {
@@ -1766,11 +1795,15 @@ textarea:focus {
   transform: translateY(0);
 }
 
-.portfolio-list .portfolio-list__item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-list .portfolio-list__item:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
-.portfolio-list .portfolio-list__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-list .portfolio-list__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
