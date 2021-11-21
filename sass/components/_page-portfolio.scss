@@ -99,26 +99,22 @@
   right: 0;
   width: 100%;
   height: 100%;
-  
+  padding: 77px 24px 0px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cibic-animation);
 
-  @media screen and (min-width: 0) {
-    padding: 77px 24px 77px 24px;
-  }  @media screen and (min-width: 768px) {
-    padding: 49px 24px 49px 24px;
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 0px 24px;
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
-    padding: 63px 24px 63px 24px;
+    padding: 63px 24px 0px 24px;
   }
 }
- .portfolio-list__item {
-
-  
+ .portfolio-list__item {  
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
