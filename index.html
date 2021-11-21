@@ -18,13 +18,11 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-   <header class="page-header">
-      <nav class="container">
+   <header class="container">
+     <div class="page-header">
+      <nav class="page-header__nav">
         <a lang="en" href="./index.html" class="logo1"
           >Web <span class="logo2">Studio</span></a
-        >
-        <svg class="page-header__icon">
-          <use href="./images/icons.svg#icon-menu_24px"></use></svg
         >
         <ul class="navigation-header">
           <li class="navigation-header__item">
@@ -57,6 +55,21 @@
           </li>
         </ul>
       </nav>
+      <div class="page-header__menu " >
+        <button class="page-header__button" type="button" data-menu-open>
+          <svg class="page-header__icon">
+            <use href="./images/icons.svg#icon-menu_24px"></use></svg
+          ></button>
+        </div>
+      </div>
+     
+        <div class="header-modalka" data-menu>
+          <button class="header-modalka__close" type="button" data-menu-close>
+            <svg class="header-modalka__icon">
+              <use href="./images/icons.svg#icon-close"></use></svg
+            ></button>
+      </div>
+      
     </header> 
     <main>
       <section class="section-hero">
@@ -750,5 +763,6 @@
       </div>
     </footer>
     <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>
