@@ -274,6 +274,7 @@ body {
   .section-footer__box {
     margin-left: 70px;
     margin-right: 0;
+    padding-top: 72px;
   }
 }
 
@@ -355,6 +356,7 @@ body {
   .send {
     margin-left: auto;
     margin-right: 0;
+    margin-top: 72px;
     width: 100%;
   }
 }
@@ -372,9 +374,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .send__form {
-    display: inline-flex;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -382,9 +383,9 @@ body {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 358px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -420,10 +421,12 @@ body {
   align-content: center;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 29px;
+  padding-right: 28px;
   font-family: inherit;
   color: var(--text-hero-footer);
   background-color: var(--link);
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
@@ -441,6 +444,22 @@ body {
 
 .send__button:hover {
   color: var(--hero-hover);
+}
+
+.send__form-pozition {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+  .send__form-pozition {
+    width: 100%;
+    align-items: center;
+    margin-right: 12px;
+  }
 }
 
 .visually-hidden {
@@ -1173,7 +1192,7 @@ textarea:focus {
   align-items: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .section-company__item {
     width: 226px;
   }
