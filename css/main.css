@@ -255,8 +255,8 @@ body {
 }
 
 .page-header__icon {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
   transition-property: fill;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cibic-animation);
